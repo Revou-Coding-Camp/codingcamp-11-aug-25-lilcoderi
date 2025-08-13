@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Little Coder - Web & Mobile Development</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="navbar">
+      <div class="topbar container">
+        <div class="logo">
+          <img src="img/logo.png" alt="Little Coder Logo" class="logo-img" />
+        </div>
+        <nav class="navbar">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#profile" class="nav-link">Our Profile</a>
+          <a href="#contact" class="nav-link">Message Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section container">
+        <div class="hero-inner">
+          <div class="hero-text animate-on-scroll">
+            <h1 id="greeting">Hi Riana, Welcome to Little Coder!</h1>
+            <p class="subtitle">
+              Building innovative web, mobile, and AI solutions for your business.
+            </p>
+
+            <div class="name-area">
+              <input
+                id="input-name"
+                type="text"
+                placeholder="Enter your name..."
+                value="Riana"
+                aria-label="Name"
+              />
+              <button id="fill-name" class="btn btn-primary">Update Name</button>
+            </div>
+          </div>
+
+          <div class="hero-banner animate-on-scroll">
+            <img
+              src="img/banner.jpg"
+              alt="Little Coder Banner"
+            />
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-sep" />
+
+      <section id="profile" class="profile-section section container">
+        <h2 class="section-title animate-on-scroll">Our Profile</h2>
+        <div class="profile-content">
+          <div class="about-us animate-on-scroll">
+            <h3>About Little Coder</h3>
+            <p>
+              Founded by Riana Nur Anisa, Little Coder is a technology firm
+              specializing in web and mobile development, as well as cutting-edge AI technologies.
+              We are passionate about creating robust and user-friendly digital products that
+              help our clients succeed in a competitive landscape.
+            </p>
+            <p>
+              Our team of skilled developers and designers is committed to delivering
+              high-quality solutions that are both scalable and secure. We work closely
+              with our clients to understand their needs and turn their ideas into
+              reality.
+            </p>
+          </div>
+          <div class="vision-mission animate-on-scroll">
+            <h3>Our Vision</h3>
+            <p>
+              To be a leading technology partner for innovative businesses.
+            </p>
+            <h3>Our Mission</h3>
+            <ul>
+              <li>
+                Provide high-quality web, mobile, and AI solutions.
+              </li>
+              <li>
+                Empower clients with cutting-edge technology.
+              </li>
+              <li>
+                Build strong, collaborative relationships.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hq-section">
+          <h3 class="animate-on-scroll">Our Headquarters</h3>
+          <div class="hq-list">
+            <div class="hq-item animate-on-scroll">
+              <div class="hq-circle">
+                <img src="img/jakarta.png" alt="Jakarta" />
+              </div>
+              <p>Jakarta</p>
+            </div>
+            <div class="hq-item animate-on-scroll">
+              <div class="hq-circle">
+                <img src="img/bandung.png" alt="Bandung" />
+              </div>
+              <p>Bandung</p>
+            </div>
+            <div class="hq-item animate-on-scroll">
+              <div class="hq-circle">
+                <img src="img/surabaya.png" alt="Surabaya" />
+              </div>
+              <p>Surabaya</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-sep" />
+
+      <section id="contact" class="contact section container">
+        <h2 class="section-title animate-on-scroll">Message Us</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form animate-on-scroll" novalidate>
+            <label for="name">Full Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="e.g., Jane Doe"
+            />
+            <small class="error" id="name-error"></small>
+
+            <label for="email">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="e.g., name@example.com"
+            />
+            <small class="error" id="email-error"></small>
+
+            <label for="phone">Phone Number</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="e.g., +6281234567890"
+            />
+            <small class="error" id="phone-error"></small>
+
+            <label for="message">Message / Inquiry</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Write your message here..."
+            ></textarea>
+            <small class="error" id="message-error"></small>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <div id="submitted-box" class="submitted-box animate-on-scroll" aria-live="polite">
+            <div class="box-header">Submitted Message Summary</div>
+            <div id="current-time" class="time">-</div>
+
+            <div class="box-body" id="submitted-values">
+              <p><strong>Name:</strong> -</p>
+              <p><strong>Email:</strong> -</p>
+              <p><strong>Phone:</strong> -</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container foot-inner">
+        <small>&copy; 2025 Little Coder. All Rights Reserved. Created by Riana Nur Anisa.</small>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
